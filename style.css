@@ -1,0 +1,71 @@
+#gamescreen {
+  margin-top: 100px;
+  /* margin-left: 100px; */
+}
+
+section {
+  display: flex;
+  border: 2px solid darkgreen;
+  width: 700fr;
+  height: 100fr;
+}
+.top {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#mid{
+  display: grid;
+  grid-template-columns: 5% 95%;
+  background-color: darkgrey;
+}
+
+#home {
+  grid-column-start: 1;
+  transform: rotate(-90deg);
+  margin: auto 0;
+}
+
+button{
+  height: 80px;
+  width: 100px;
+}
+
+.garden {
+  display: grid;
+  height: 500px;
+  border: 1px solid green;
+  grid-template: repeat(5,1fr)/repeat(6,1fr);
+  grid-column-start: 2;
+
+}
+
+.garden-grid-a {
+  border: 1px greenyellow dotted;
+  background-color: darkolivegreen;
+  display: grid;
+  align-items: center;
+  justify-content: left;
+}
+
+.plants {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.plant-item{
+  display: inline-flex;
+  border: 1px black solid;
+  background-color: burlywood;
+  width: 100px;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
