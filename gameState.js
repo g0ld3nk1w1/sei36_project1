@@ -24,7 +24,7 @@ class Zombie extends Base {
         this.hits = hits;
     }
 }
-
+import peashooterImg from "./images/peashooter.png"
 function populatePlants(app){
     //Plants
     //Sunflower is currently cosmetic
@@ -32,7 +32,7 @@ function populatePlants(app){
     app.plantsAvail.push(sunflower);
 
     //Peashooter always hit once per day
-    const peashooter = new Plant(peashooterStr, 'images/peashooter.png',20);
+    const peashooter = new Plant(peashooterStr, peashooterImg,20);
     app.plantsAvail.push(peashooter);
 }
 
