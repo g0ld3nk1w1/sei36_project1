@@ -28,11 +28,11 @@ class Zombie extends Base {
 function populatePlants(app){
     //Plants
     //Sunflower is currently cosmetic
-    const sunflower = new Plant(sunflowerStr, 'blob/main/images/sunflower.png',30);
+    const sunflower = new Plant(sunflowerStr, 'https://github.com/g0ld3nk1w1/sei36_project1/blob/main/images/sunflower.png',30);
     app.plantsAvail.push(sunflower);
 
     //Peashooter always hit once per day
-    const peashooter = new Plant(peashooterStr, './images/peashooter.png',20);
+    const peashooter = new Plant(peashooterStr, 'https://github.com/g0ld3nk1w1/sei36_project1/blob/main/images/peashooter.png',20);
     app.plantsAvail.push(peashooter);
 }
 
