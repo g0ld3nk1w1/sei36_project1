@@ -1,4 +1,7 @@
 import {plantsWin, zombiesWin} from '/main.js'
+import peashooterImg from "./images/peashooter.png"
+import sunflowerImg from "./images/sunflower.png"
+import zombieImg from "./images/zombie_tutorial.png"
 
 const peashooterStr = "Peashooter", sunflowerStr ="Sunflower";
 class Base {
@@ -28,7 +31,7 @@ import peashooterImg from "./images/peashooter.png"
 function populatePlants(app){
     //Plants
     //Sunflower is currently cosmetic
-    const sunflower = new Plant(sunflowerStr, 'https://raw.githubusercontent.com/g0ld3nk1w1/sei36_project1/main/images/sunflower.png',30);
+    const sunflower = new Plant(sunflowerStr, sunflowerImg,30);
     app.plantsAvail.push(sunflower);
 
     //Peashooter always hit once per day
@@ -92,7 +95,7 @@ function generateZombie(app){
     // console.log('numOfZombies', numOfZombies);
     for (let i =1; i <= numOfZombies; i++ ){
         const row = randNum();
-        app.garden[row][5] = new Zombie('basic_zombie', 'images/zombie_tutorial.png',2);
+        app.garden[row][5] = new Zombie('basic_zombie', zombieImg,2);
     }
 }
 
