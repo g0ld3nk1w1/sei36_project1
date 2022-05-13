@@ -27,7 +27,6 @@ class Zombie extends Base {
         this.hits = hits;
     }
 }
-import peashooterImg from "./images/peashooter.png"
 function populatePlants(app){
     //Plants
     //Sunflower is currently cosmetic
