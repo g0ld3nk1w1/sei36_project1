@@ -32,7 +32,7 @@ function populatePlants(app){
     app.plantsAvail.push(sunflower);
 
     //Peashooter always hit once per day
-    const peashooter = new Plant(peashooterStr, 'https://github.com/g0ld3nk1w1/sei36_project1/blob/main/images/peashooter.png',20);
+    const peashooter = new Plant(peashooterStr, 'images/peashooter.png',20);
     app.plantsAvail.push(peashooter);
 }
 
@@ -92,7 +92,7 @@ function generateZombie(app){
     // console.log('numOfZombies', numOfZombies);
     for (let i =1; i <= numOfZombies; i++ ){
         const row = randNum();
-        app.garden[row][5] = new Zombie('basic_zombie', '/images/zombie_tutorial.png',2);
+        app.garden[row][5] = new Zombie('basic_zombie', 'images/zombie_tutorial.png',2);
     }
 }
 
