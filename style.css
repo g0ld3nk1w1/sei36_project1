@@ -9,6 +9,17 @@ section {
   width: 700fr;
   height: 100fr;
 }
+
+.howto {
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.howto p {
+  text-align:  center;
+}
+
 .top {
   text-align: center;
   display: flex;
