@@ -77,7 +77,7 @@ const drawGarden = () => {
       gardenDisplay[i].appendChild(img);
     }
   }
-//  console.log(app.garden);
+ console.log(app.garden);
 }
 
 const generateGarden = () => {

@@ -5,10 +5,10 @@ import zombieImg from "./images/zombie_tutorial.png"
 
 const peashooterStr = "Peashooter", sunflowerStr ="Sunflower";
 class Base {
-    constructor (name,imgurl,isPlant){
+    constructor (name,imgurl,isPlant = false ){
         this.name = name;
         this.imgurl = imgurl;
-        this.isPlant = isPlant || false;
+        this.isPlant = isPlant;
     }
 }
 
